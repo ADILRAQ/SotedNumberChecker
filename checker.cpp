@@ -6,7 +6,7 @@
 /*   By: araqioui <araqioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 17:53:08 by araqioui          #+#    #+#             */
-/*   Updated: 2023/10/25 18:13:23 by araqioui         ###   ########.fr       */
+/*   Updated: 2023/10/26 13:18:20 by araqioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,8 @@ int main(int ac, char **av)
 	std::vector<int>	vec;
 	int	i = 1;
 
+	if (ac == 1)
+		return (1);
 	while (i < ac)
 		vec.push_back(atoi(av[i++]));
 	if (checker(vec))
